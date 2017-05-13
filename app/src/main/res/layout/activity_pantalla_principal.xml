@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="edu.upc.eetac.dsa.calculadorasencilla.PantallaPrincipal">
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="245dp"
+        android:layout_height="48dp"
+        android:text="Introdiu 2 valors enters i una operació. Premeu '=' per a veure el resultat"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="34dp"
+        android:layout_marginLeft="70dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+    <EditText
+        android:id="@+id/Num1"
+        android:layout_width="64dp"
+        android:layout_height="44dp"
+        android:ems="10"
+        android:inputType="number"
+        android:text="0"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="110dp"
+        android:layout_marginLeft="161dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        tools:layout_editor_absoluteY="102dp" />
+
+    <EditText
+        android:id="@+id/Num2"
+        android:layout_width="72dp"
+        android:layout_height="39dp"
+        android:ems="10"
+        android:inputType="number"
+        android:text="0"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="276dp"
+        android:layout_marginLeft="156dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="100dp"
+        android:layout_height="38dp"
+        android:layout_marginLeft="142dp"
+        android:layout_marginTop="192dp"
+        android:entries="@array/signos"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/resultat_btn"
+        android:layout_width="91dp"
+        android:layout_height="43dp"
+        android:text="="
+        android:onClick="mostrarResultat"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="338dp"
+        android:layout_marginLeft="41dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <Button
+        android:id="@+id/historial"
+        android:layout_width="146dp"
+        android:layout_height="68dp"
+        android:layout_marginLeft="107dp"
+        android:layout_marginTop="415dp"
+        android:text="Historial"
+        android:onClick="mostrarHistorial"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/c"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="280dp"
+        android:layout_marginTop="333dp"
+        android:text="C"
+        android:onClick="c"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/resultat"
+        android:layout_width="104dp"
+        android:layout_height="44dp"
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="338dp"
+        android:ems="10"
+        android:enabled="false"
+        android:inputType="number"
+        android:text="resultat"
+        android:textAlignment="center"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
